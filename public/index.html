@@ -24,7 +24,7 @@
 
     <title>Tailwind</title>
   </head>
-  <body>
+  <body class="font-open">
     <!-- Header Section -->
     <header class="bg-black py-6 lg:py-12 text-gega-grey uppercase">
       <!-- Header Container -->
@@ -99,7 +99,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="h-64 md:h-96 lg:h-128 group relative">
+    <section class="h-96 lg:h-128 group relative">
       <!-- Hero Image -->
       <img
         src="./images/batman.jpg"
@@ -185,12 +185,14 @@
     <!-- Movies Section -->
     <section class="py-24 bg-black">
       <!-- Movies Content -->
-      <div class="container flex space-x-16">
+      <div
+        class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0"
+      >
         <!-- Left Content -->
         <div class="basis-2/3">
           <!-- Titles -->
           <div
-            class="flex space-x-2 divide-x divide-gega-red divide-opacity-50 mb-8"
+            class="flex space-x-2 divide-x divide-gega-red divide-opacity-50 mb-8 pl-10 lg:pl-0"
           >
             <h2 class="text-gega-red"><a href="#">Latest</a></h2>
             <h2 class="text-gega-grey pl-2 hover:text-gega-red duration-3000">
@@ -203,7 +205,9 @@
           <!-- Images Container -->
           <div class="flex flex-wrap">
             <!-- Image 1 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv1.jpg"
@@ -238,7 +242,9 @@
             </div>
 
             <!-- Image 2 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv2.jpg"
@@ -273,7 +279,9 @@
             </div>
 
             <!-- Image 3 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv3.jpg"
@@ -308,7 +316,9 @@
             </div>
 
             <!-- Image 4 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv4.jpg"
@@ -343,7 +353,9 @@
             </div>
 
             <!-- Image 5 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv5.jpg"
@@ -378,7 +390,9 @@
             </div>
 
             <!-- Image 6 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv6.jpg"
@@ -411,16 +425,92 @@
                 </div>
               </div>
             </div>
+
+            <!-- Image 7 -->
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden"
+            >
+              <!-- Image -->
+              <img
+                src="./images/mv1.jpg"
+                alt="mv1 Image"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!-- Image Detail Container -->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  Skyfall
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 text-gega-grey duration-500"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  magnam.
+                </p>
+                <!-- Icons Container -->
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="#" class="hover:text-gega-red"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a href="#" class="hover:text-gega-red"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 8 -->
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden"
+            >
+              <!-- Image -->
+              <img
+                src="./images/mv2.jpg"
+                alt="mv2 Image"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!-- Image Detail Container -->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  Skyfall
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 text-gega-grey duration-500"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+                  magnam.
+                </p>
+                <!-- Icons Container -->
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="#" class="hover:text-gega-red"
+                    ><i class="fa-solid fa-play"></i
+                  ></a>
+                  <a href="#" class="hover:text-gega-red"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Right Content -->
-        <div class="basis-1/3">
+        <div class="basis-1/3 pl-10 lg:pl-0">
           <!-- Title -->
           <h2 class="text-gega-grey mb-8">Hot News</h2>
           <!-- News Container -->
-          <div class="flex flex-col h-full pb-16 justify-between">
+          <div
+            class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4"
+          >
             <!-- Item 1 -->
-            <div class="flex items-center group">
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
                 <img
@@ -444,7 +534,7 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="flex items-center group">
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
                 <img
@@ -468,7 +558,7 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="flex items-center group">
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
                 <img
@@ -492,7 +582,7 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="flex items-center group">
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
                 <img
@@ -516,7 +606,9 @@
             </div>
 
             <!-- Item 5-->
-            <div class="flex items-center group">
+            <div
+              class="flex items-center group basis-3/4 md:basis-1/2 md:hidden lg:flex"
+            >
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
                 <img
